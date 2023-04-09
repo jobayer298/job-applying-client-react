@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "https://i.ibb.co/GVRCCbj/chip-1.png",
+    "name": "Marketing",
+    "jobs": "100+ job available"
+  },
+  {
+    "logo": "https://i.ibb.co/DRMVt2Z/business-1.png",
+    "name": "Information Technology",
+    "jobs": "234 job available"
+  },
+  {
+    "logo": "https://i.ibb.co/HF1L7G3/social-media-1.png",
+    "name": "Finance",
+    "jobs": "300 job available"
+  },
+  {
+    "logo": "https://i.ibb.co/2MJWvmL/accounts-1.png",
+    "name": "Education",
+    "jobs": "234+ job available"
+  }
+]
