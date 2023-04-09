@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "company_logo": "https://i.ibb.co/qrBqtGy/netflix-4-1.png",
+    "job_title": "Front-end Developer",
+    "company_name": "Acme Corporation",
+    "remote_or_onsite": "Remote",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We are seeking a skilled front-end developer to join our team and help us build amazing web experiences.",
+    "job_responsibility": "Responsibilities include developing user-friendly websites, collaborating with the design team, and ensuring that the website is optimized for speed and scalability.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "2+ years of experience in front-end development",
+    "contact": {
+      "email": "jobs@acmecorp.com",
+      "phone": "555-555-1234"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "https://i.ibb.co/j6CZ8mS/tesla-9-1.png",
+    "job_title": "Marketing Manager",
+    "company_name": "Globex Corporation",
+    "remote_or_onsite": "Onsite",
+    "location": "Los Angeles, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$90,000 - $120,000",
+    "job_description": "We are seeking an experienced Marketing Manager to lead our team and develop effective marketing strategies.",
+    "job_responsibility": "Responsibilities include developing and executing marketing campaigns, analyzing market trends, and managing the marketing budget.",
+    "educational_requirements": "Bachelor's degree in Marketing, Business, or a related field",
+    "experiences": "5+ years of experience in marketing",
+    "contact": {
+      "email": "jobs@globexcorp.com",
+      "phone": "555-555-5678"
+    }
+  },
+  {
+    "id": 3,
+    "company_logo": "https://i.ibb.co/jRdJk1P/google-1-1-1.png",
+    "job_title": "Software Engineer",
+    "company_name": "Initech",
+    "remote_or_onsite": "Remote",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "job_description": "We are seeking a talented Software Engineer to join our team and help us develop cutting-edge software products.",
+    "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contact": {
+      "email": "jobs@initech.com",
+      "phone": "555-555-9012"
+    }
+  },
+  {
+    "id": 4,
+    "company_logo": "https://i.ibb.co/PYFSd0M/Group-10021.png",
+    "job_title": "Graphics designer",
+    "company_name": "Meta",
+    "remote_or_onsite": "Remote",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "job_description": "We are seeking a talented Software Engineer to join our team and help us develop cutting-edge software products.",
+    "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contact": {
+      "email": "jobs@initech.com",
+      "phone": "555-555-9012"
+    }
+  },
+  {
+    "id": 5,
+    "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI6l_Ke7bLlLXKObZB7yt0WmLj3wJN37g__AesmasZMM_ZxpxvJnnyV0qI2Uomijc9IBA&usqp=CAU",
+    "job_title": "Database Designer",
+    "company_name": "google",
+    "remote_or_onsite": "Remote",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "job_description": "We are seeking a talented Software Engineer to join our team and help us develop cutting-edge software products.",
+    "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contact": {
+      "email": "jobs@initech.com",
+      "phone": "555-555-9012"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xmrB-dcy6AYviOJlI859JcS9nwkg23jc_g&usqp=CAU",
+    "job_title": "Backend Developer",
+    "company_name": "Tesla",
+    "remote_or_onsite": "Remote",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "job_description": "We are seeking a talented Software Engineer to join our team and help us develop cutting-edge software products.",
+    "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contact": {
+      "email": "jobs@initech.com",
+      "phone": "555-555-9012"
+    }
+  }
+]
