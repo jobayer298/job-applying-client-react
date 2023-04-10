@@ -10,3 +10,7 @@
   border-radius: 8px;
   border: none;
 }
+
+.my-container{
+  @apply max-w-6xl mx-auto;
+}
