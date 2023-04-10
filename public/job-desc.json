@@ -12,10 +12,9 @@
     "job_responsibility": "Responsibilities include developing user-friendly websites, collaborating with the design team, and ensuring that the website is optimized for speed and scalability.",
     "educational_requirements": "Bachelor's degree in Computer Science or a related field",
     "experiences": "2+ years of experience in front-end development",
-    "contact": {
-      "email": "jobs@acmecorp.com",
-      "phone": "555-555-1234"
-    }
+
+    "email": "jobs@acmecorp.com",
+    "phone": "555-555-1234"
   },
   {
     "id": "L2N6Q8S",
@@ -30,10 +29,10 @@
     "job_responsibility": "Responsibilities include developing and executing marketing campaigns, analyzing market trends, and managing the marketing budget.",
     "educational_requirements": "Bachelor's degree in Marketing, Business, or a related field",
     "experiences": "5+ years of experience in marketing",
-    "contact": {
+
       "email": "jobs@globexcorp.com",
       "phone": "555-555-5678"
-    } 
+
   },
   {
     "id": "Y4H9P6D",
@@ -48,10 +47,10 @@
     "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
     "educational_requirements": "Bachelor's degree in Computer Science or a related field",
     "experiences": "3+ years of experience in software engineering",
-    "contact": {
+
       "email": "jobs@initech.com",
       "phone": "555-555-9012"
-    }
+
   },
   {
     "id": "F8J5N2G",
@@ -66,10 +65,10 @@
     "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
     "educational_requirements": "Bachelor's degree in Computer Science or a related field",
     "experiences": "3+ years of experience in software engineering",
-    "contact": {
+
       "email": "jobs@initech.com",
       "phone": "555-555-9012"
-    }
+
   },
   {
     "id": "T6K1V9B",
@@ -84,10 +83,10 @@
     "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
     "educational_requirements": "Bachelor's degree in Computer Science or a related field",
     "experiences": "3+ years of experience in software engineering",
-    "contact": {
+
       "email": "jobs@initech.com",
       "phone": "555-555-9012"
-    }
+
   },
   {
     "id": "Z3C7L5R",
@@ -102,9 +101,8 @@
     "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and maintaining high-quality code.",
     "educational_requirements": "Bachelor's degree in Computer Science or a related field",
     "experiences": "3+ years of experience in software engineering",
-    "contact": {
+
       "email": "jobs@initech.com",
       "phone": "555-555-9012"
-    }
   }
 ]

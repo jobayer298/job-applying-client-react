@@ -1,9 +1,9 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Features_job = () => {
     const jobData = useLoaderData()
-    console.log(jobData);
+    // console.log(jobData);
     return (
       <div className="my-container pb-24">
         <div className="title text-center pb-8">
@@ -34,7 +34,9 @@ const Features_job = () => {
                 <span>{job.location}</span>
                 <span>Salary: {job.salary}</span>
               </p>
-              <button className="btn btn-bg text-white">View Details</button>
+              <Link to={`/job/${job.id}`}>
+                <button className="btn btn-bg text-white">View Details</button>
+              </Link>
             </div>
           ))}
         </div>

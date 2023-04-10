@@ -1,13 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './Components/Home';
-import Statistics from './Components/Statistics';
-import Applied_jobs from './Components/Applied_jobs';
-import Blogs from './Components/Blogs';
-import Error from './Components/Error';
+import Home from "./Components/Home";
+import Statistics from "./Components/Statistics";
+import Applied_jobs from "./Components/Applied_jobs";
+import Blogs from "./Components/Blogs";
+import Error from "./Components/Error";
+import JobDetails from "./Components/JobDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +18,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("job-desc.json"),
+        loader: () => fetch("/job-desc.json"),
+      },
+      {
+        path: "job/:jobID",
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch("/job-desc.json"),
       },
       {
         path: "statistics",
@@ -34,7 +40,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
