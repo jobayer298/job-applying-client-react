@@ -4,7 +4,7 @@ import "./Error.css";
 
 const Error = () => {
   return (
-    <section className="flex justify-center items-center h-screen p-16  text-gray-900">
+    <section className="flex text-center justify-center items-center h-screen p-16  text-gray-900">
       <div>
         <div className="number">404</div>
         <h2 className="gradient-heading mb-6">Ops..Page Not Fount</h2> <br />
