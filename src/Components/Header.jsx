@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -33,9 +33,9 @@ const Header = () => {
           }`}
         >
           {link.map((l, index) => (
-            <Link key={index} to={l.href}>
+            <NavLink key={index} to={l.href} className={({isActive})=> isActive ? 'active' : 'default'}>
               <li className="my-3 md:my-0 ">{l.name}</li>
-            </Link>
+            </NavLink>
           ))}
           <button className="btn btn-bg text-white">Start Applying</button>
         </ul>
