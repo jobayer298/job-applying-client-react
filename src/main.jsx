@@ -9,6 +9,7 @@ import Applied_jobs from "./Components/Applied_jobs";
 import Blogs from "./Components/Blogs";
 import Error from "./Components/Error";
 import JobDetails from "./Components/JobDetails";
+import { allJobsData } from "./Components/Loaders/GetjobAndCartData";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       {
         path: "applied_jobs",
         element: <Applied_jobs></Applied_jobs>,
+        loader: () => fetch("/job-desc.json"),
       },
       {
         path: "blogs",

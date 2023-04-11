@@ -31,7 +31,10 @@ const Features_job = () => {
                 </button>
               </div>
               <p className="flex gap-4 text-[#757575]">
-                <span>{job.location}</span>
+                <span className='flex items-center gap-2'>
+                  <ion-icon name="location-outline"></ion-icon>
+                  {job.location}
+                </span>
                 <span>Salary: {job.salary}</span>
               </p>
               <Link to={`/job/${job.id}`}>

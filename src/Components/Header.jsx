@@ -13,7 +13,7 @@ const Header = () => {
     <div className="bg-[#9873ff21]">
       <nav className=" max-w-6xl mx-auto lg:flex justify-between md:items-center py-5">
         <div className="logo">
-          <h1 className="font-bold text-4xl ">Navbar</h1>
+          <h1 className="font-bold text-4xl ">HomeIT</h1>
         </div>
         <div
           onClick={() => setOpen(!open)}

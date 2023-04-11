@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import { addToDb } from "../utils/fakeDB";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
-  console.log(jobs);
+  // console.log(jobs);
   const dynamic = useParams();
   console.log(dynamic.jobID);
   const [job, setJob] = useState({});
   useEffect(() => {
-    const findData =  jobs.find((j) => j.id === dynamic.jobID);
+    const findData = jobs.find((j) => j.id === dynamic.jobID);
     console.log(findData);
     setJob(findData);
   }, []);
+
+  const handleCart = (id) =>{
+    console.log(id);
+    addToDb(id)
+  }
 
   return (
     <div className="my-container">
@@ -36,29 +42,40 @@ const JobDetails = () => {
         <div className="job-details bg-[#9873ff21] rounded-xl p-7 leading-8">
           <h2 className="font-bold text-2xl">Job details</h2>
           <p>
-            <span className="font-bold">Salary: </span>
-
+            <span className="font-bold">$ Salary:</span>
             <span className="text-[#757575]">{job.salary}</span>
           </p>
-          <p>
-            <span className="font-bold">Job title: </span>
+          <p className="flex items-center gap-2">
+            <span className="font-bold">
+              <ion-icon name="card-outline"></ion-icon>Job title:
+            </span>
             <span className="text-[#757575]">{job.job_title}</span>
           </p>
           <h2 className="font-bold text-2xl">Contact information</h2>
 
           <p>
-            <span className="font-bold">Email: </span>
+            <span className="font-bold">
+              <ion-icon name="mail-outline"></ion-icon>Email:{" "}
+            </span>
             <span className="text-[#757575]">{job.email}</span>
           </p>
           <p>
-            <span className="font-bold ">Phone: </span>
+            <span className="font-bold ">
+              <ion-icon name="call-outline"></ion-icon>Phone:{" "}
+            </span>
             <span className="text-[#757575]">{job.phone}</span>
           </p>
           <p>
-            <span className="font-bold">Job title: </span>
+            <span className="font-bold">
+              <ion-icon name="location-outline"></ion-icon>Location:{" "}
+            </span>
             <span className="text-[#757575]">{job.location}</span>
           </p>
-          <button className="btn btn-bg text-white mt-3 btn-wide">
+
+          <button
+            onClick={() => handleCart(dynamic.jobID)}
+            className="btn btn-bg text-white mt-3 btn-wide"
+          >
             Apply Now
           </button>
         </div>
