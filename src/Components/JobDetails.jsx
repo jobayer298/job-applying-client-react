@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { addToDb } from "../utils/fakeDB";
+import { addToDb, getStoredCart } from "../utils/fakeDB";
+ import {  toast } from "react-toastify";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -15,9 +16,26 @@ const JobDetails = () => {
   }, []);
 
   const handleCart = (id) =>{
+    const savedCart = getStoredCart();
+    console.log(savedCart);
+    let cart = [];
+    for (const id in savedCart) {
+      const findData = jobs.find((jb) => jb.id === id);
+      if (findData) {
+        cart.push(findData);
+      }
+    }
+    console.log(cart);
+    const exist = cart.find((ct) => ct.id === dynamic.jobID);
+    if(exist){
+      toast("You have already applied!");
+      return
+    }
     console.log(id);
     addToDb(id)
   }
+  
+
 
   return (
     <div className="my-container">

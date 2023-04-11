@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 
 const Features_job = () => {
     const jobData = useLoaderData()
+    const [showAll, setShowAll] = useState(false)
+    const handleShowAll = () =>{
+      setShowAll(true)
+    }
     // console.log(jobData);
     return (
       <div className="my-container pb-24">
@@ -13,8 +17,8 @@ const Features_job = () => {
             need. Its your future
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-4">
-          {jobData.map((job) => (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  px-5 md:px-0">
+          {jobData.slice(0, showAll ? 6 : 4).map((job) => (
             <div
               key={job.id}
               className="border-gray-200 border-2 p-6 leading-10 rounded-lg"
@@ -31,7 +35,7 @@ const Features_job = () => {
                 </button>
               </div>
               <p className="flex gap-4 text-[#757575]">
-                <span className='flex items-center gap-2'>
+                <span className="flex items-center gap-2">
                   <ion-icon name="location-outline"></ion-icon>
                   {job.location}
                 </span>
@@ -42,6 +46,13 @@ const Features_job = () => {
               </Link>
             </div>
           ))}
+        </div>
+        <div className="text-center my-6">
+          {!showAll && (
+            <button onClick={handleShowAll} className="btn btn-bg text-white">
+              Show All Jobs
+            </button>
+          )}
         </div>
       </div>
     );

@@ -4,7 +4,7 @@ const Banner = () => {
     return (
       <>
         <div className="bg-[#9873ff21]">
-          <div className="my-container banner py-7 flex items-center justify-between gap-16 ">
+          <div className="my-container banner py-7 md:flex items-center justify-between px-5 md:px-0 gap-16 ">
             <div className="banner-info">
               <h2 className="text-6xl font-bold leading-[80px] pb-6">
                 One Step <br /> Closer To Your{" "}

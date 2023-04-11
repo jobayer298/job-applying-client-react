@@ -7,9 +7,9 @@ import Home from "./Components/Home";
 import Statistics from "./Components/Statistics";
 import Applied_jobs from "./Components/Applied_jobs";
 import Blogs from "./Components/Blogs";
-import Error from "./Components/Error";
 import JobDetails from "./Components/JobDetails";
 import { allJobsData } from "./Components/Loaders/GetjobAndCartData";
+import Error from "./Components/Error/Error";
 const router = createBrowserRouter([
   {
     path: "/",

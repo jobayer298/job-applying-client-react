@@ -17,10 +17,14 @@ const Category = () => {
             need. Its your future
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4 gap-5  px-5 md:px-0">
           {category.map((c, index) => (
             <div key={index} className="bg-indigo-100 p-7 py-11 rounded-xl">
-              <img className="mb-3 bg-indigo-200 p-4 rounded-xl" src={c.logo} alt="" />
+              <img
+                className="mb-3 bg-indigo-200 p-4 rounded-xl"
+                src={c.logo}
+                alt=""
+              />
               <p className="mb-2 text-[19px] font-semibold ">{c.name}</p>
               <p>{c.jobs}</p>
             </div>

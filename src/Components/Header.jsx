@@ -10,10 +10,12 @@ const Header = () => {
     { name: " Blogs", href: "/blogs" },
   ];
   return (
-    <div className="bg-[#9873ff21]">
-      <nav className=" max-w-6xl mx-auto lg:flex justify-between md:items-center py-5">
+    <div className="bg-black md:bg-[#9873ff21] text-white md:text-black">
+      <nav className=" px-5 md:px-0 max-w-6xl mx-auto md:flex lg:flex justify-between md:items-center py-5">
         <div className="logo">
-          <h1 className="font-bold text-4xl ">HomeIT</h1>
+          <Link to="/">
+            <h1 className="font-bold text-4xl ">HomeIT</h1>
+          </Link>
         </div>
         <div
           onClick={() => setOpen(!open)}
@@ -26,17 +28,17 @@ const Header = () => {
           )}
         </div>
         <ul
-          className={`lg:flex gap-9 font-semibold lg:items-center absolute  lg:static md:z-auto z-[1] left-0 pl-9 md:pl-0 w-full md:w-auto  ${
+          className={`md:flex bg-black md:bg-[#F2EDFF] lg:bg-[#F2EDFF]  lg:flex gap-6 font-semibold lg:items-center absolute md:static lg:static md:z-auto z-[1] left-0 pl-9 md:pl-0 w-full md:w-auto  ${
             open ? "top-20" : "top-[-490px]"
           }`}
         >
           {link.map((l, index) => (
             <Link key={index} to={l.href}>
-              <li className="my-3 md:my-0">{l.name}</li>
+              <li className="my-3 md:my-0 ">{l.name}</li>
             </Link>
           ))}
+          <button className="btn btn-bg text-white">Start Applying</button>
         </ul>
-        <button className="btn btn-bg text-white">Start Applying</button>
       </nav>
     </div>
   );

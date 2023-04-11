@@ -65,7 +65,7 @@ const Applied_jobs = () => {
             className="mt-7 border-gray-200 border-2 p-7 rounded-xl"
             key={c.id}
           >
-            <div className="flex items-center gap-10">
+            <div className="md:flex items-center gap-10">
               <img className="w-44 h-12" src={c.company_logo} alt="" />
               <div className="leading-7  grow">
                 <h2>{c.job_title}</h2>

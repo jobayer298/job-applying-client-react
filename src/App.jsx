@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Components/Header'
 import { Outlet } from 'react-router-dom'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +14,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Outlet></Outlet>
+      <ToastContainer></ToastContainer>
     </div>
   )
 }
