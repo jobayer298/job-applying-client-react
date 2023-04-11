@@ -1,5 +1,6 @@
 "# b7a9-career-hub-jobayer298" 
 # Career Hub
+## live Link: [https://stellular-douhua-1c822c.netlify.app/](https://stellular-douhua-1c822c.netlify.app/)
 ### 1. This is job applying site
 ### 2. First I created all routes of my project then checked that works or not
 ### 3. Then I create navbar and declare a outlet below navbar. I made 2 json data for my project as per requirements. 
