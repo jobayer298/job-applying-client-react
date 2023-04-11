@@ -19,5 +19,5 @@
   @apply text-[#7e90fe]
 }
 .default{
-  @apply text-black
+  @apply text-white md:text-black
 }
